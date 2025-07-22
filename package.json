@@ -1,32 +1,36 @@
 {
-  "name": "nodejs",
-  "version": "1.0.0",
-  "description": "<!--\r Опис команд роботи з платформою репозиторіїв github\r -->",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lozap/task-manager.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lozap/task-manager/issues"
-  },
-  "homepage": "https://github.com/lozap/task-manager#readme",
-  "dependencies": {
-    "body-parser": "^2.2.0",
-    "express": "^5.1.0"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.31.0",
-    "eslint": "^9.31.0",
-    "eslint-config-prettier": "^10.1.8",
-    "globals": "^16.3.0",
-    "prettier": "^3.6.2"
-  }
+    "name": "nodejs",
+    "version": "1.0.0",
+    "description": "<!--\r Опис команд роботи з платформою репозиторіїв github\r -->",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "format:check": "prettier --check .",
+        "format:write": "prettier --write .",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint --fix ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lozap/task-manager.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lozap/task-manager/issues"
+    },
+    "homepage": "https://github.com/lozap/task-manager#readme",
+    "dependencies": {
+        "body-parser": "^2.2.0",
+        "express": "^5.1.0"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.31.0",
+        "eslint": "^9.31.0",
+        "eslint-config-prettier": "^10.1.8",
+        "globals": "^16.3.0",
+        "prettier": "^3.6.2"
+    }
 }
