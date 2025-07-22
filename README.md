@@ -1,6 +1,6 @@
-<!--
+
 Опис команд підключення проекту до платформи репозиторіїв github
--->
+================================================================
 
 git config --global user.name "lozap"
 
@@ -26,8 +26,6 @@ git branch -M main
 
 git remote add origin https://github.com/lozap/task-manager.git
 
-git remote set-url origin
-
 git push -u origin main
 
 touch .gitignore
@@ -35,7 +33,8 @@ touch .gitignore
 echo "node_modules
 package-lock.json" > .gitignore
 
-<!-- Встановлення модулів необхідних для розробки застосунку -->
+Встановлення модулів необхідних для розробки застосунку
+================================================================
 
 npm init -y
 
@@ -43,4 +42,12 @@ npm i express body-parser
 
 npm i eslint eslint-config-prettier prettier -D
 
+Використовуємо відповідний матеріалу лекції застарий інструмент 
+створення конфігурації eslint в json-файлі
 npm init @eslint/config@0.4.6
+
+перекомпілюємо старий json-файл конфігурації eslint в сучасний файл eslint.config.mjs
+npx @eslint/migrate-config .eslintrc.json
+
+
+
