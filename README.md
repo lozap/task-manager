@@ -49,5 +49,9 @@ npm init @eslint/config@0.4.6
 перекомпілюємо старий json-файл конфігурації eslint в сучасний файл eslint.config.mjs
 npx @eslint/migrate-config .eslintrc.json
 
+Встановлюємо модуль автоматичного перезавантаження сервера після збереження зміненого коду
+npm i nodemon -D
 
+taskModel
+час: 0:33:00
 
