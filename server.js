@@ -1,5 +1,16 @@
+const express = require('express');
+const bodyParser = require('body-parser');
 
-const sum = (a, b) => a + b;
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-console.log(sum(5, 3)); // Outputs: 8
+//middleware
+app.use(bodyParser.json());
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT} and started at http://localhost:${PORT}`);
+});
+
+
+
+
 
