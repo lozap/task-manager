@@ -1,5 +1,5 @@
 <!--
-Опис команд роботи з платформою репозиторіїв github
+Опис команд підключення проекту до платформи репозиторіїв github
 -->
 
 git config --global user.name "lozap"
@@ -29,3 +29,18 @@ git remote add origin https://github.com/lozap/task-manager.git
 git remote set-url origin
 
 git push -u origin main
+
+touch .gitignore
+
+echo "node_modules
+package-lock.json" > .gitignore
+
+<!-- Встановлення модулів необхідних для розробки застосунку -->
+
+npm init -y
+
+npm i express body-parser
+
+npm i eslint eslint-config-prettier prettier -D
+
+npm init @eslint/config@0.4.6
