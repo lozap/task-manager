@@ -8,10 +8,11 @@ console.log(sum(5, 3)); // Outputs: 8
 // git init
 // git add .
 // git commit -m "Initial commit"
-// git add README.md
+// touch README.md
 // git commit -m "Add README"
+// gh auth login
+// gh repo create task-manager --public
 // git branch -M main
-// gh repo create test --branch main --public
-// git remote add origin
+// git remote add origin https://github.com/lozap/task-manager.git
 // git remote set-url origin
 // git push -u origin main
