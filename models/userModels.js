@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const userSchema = mongoose.Schema({
+const userSchema = new mongoose.Schema({
     userName: {
         type: String,
         require: true,
@@ -18,7 +18,7 @@ const userSchema = mongoose.Schema({
     role: {
         type: String,
         default: 'user',
-    }
+    },
 });
 
 const User = mongoose.model('User', userSchema);

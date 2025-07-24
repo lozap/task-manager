@@ -7,11 +7,15 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import { connectDB } from './config/db.js';
 
+// Importing routes
+import authRoutes from './routes/authRoutes.js';
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 //middleware
 app.use(bodyParser.json());
+app.use('/api', authRoutes);
 
 // Connect to MongoDB
 connectDB();
